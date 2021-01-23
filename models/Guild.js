@@ -6,7 +6,9 @@ const guildSchema = mongoose.Schema({
         required: true,
     },prefix: {
         type: String,
-    },
+    },logChannelID: {
+        type: String,
+    }
 });
 
 module.exports = mongoose.model('guild-settings', guildSchema)
